@@ -17,17 +17,17 @@ namespace Persistence
                 var users = new List<AppUser>
                 {
                     new AppUser{DisplayName="Deep", UserName="Deep",Email="deep2359@gmail.com"},
-                    new AppUser{DisplayName="Swagata", UserName="Swag",Email="swagata@gmail.com"},
-                    new AppUser{DisplayName="Kalyani", UserName="Kalyani",Email="kalyani@gmail.com"},
-                    new AppUser{DisplayName="Tapan", UserName="Tapan",Email="tapan@gmail.com"}
+                    //new AppUser{DisplayName="Swagata", UserName="Swag",Email="swagata@gmail.com"},
+                    //new AppUser{DisplayName="Kalyani", UserName="Kalyani",Email="kalyani@gmail.com"},
+                    //new AppUser{DisplayName="Tapan", UserName="Tapan",Email="tapan@gmail.com"}
                 };
 
                 foreach (var user in users)
                 {
-                    await userManager.CreateAsync(user,"Pa$$word");
+                    await userManager.CreateAsync(user, "Pa$$word");
                 }
             }
-                
+
 
 
             if (context.Activities.Any()) return;
